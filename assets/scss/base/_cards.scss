@@ -1,0 +1,21 @@
+.bg {
+  border: 2px solid #1c1c1d;
+  border-radius: 10px;
+  width: 340px;
+  height: 183px;
+  box-shadow: 0 4px 0 0 #202020;
+}
+.pink {
+  background: $pink !important;
+}
+
+.orange {
+  background: $accent-orange !important;
+}
+
+.yellow {
+  background:$accent-yellow !important;
+}
+.green {
+  background: $accent-green !important;
+}

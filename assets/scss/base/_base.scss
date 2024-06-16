@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+
+body {
+  font-family: $font-main;
+  background-color: $white;
+  color: $dark;
+  font-size: 18px;
+  cursor: none !important;
+  height: 100vh;
+  overflow-x: hidden;
+
+  
+}
+a {
+  color: $white;
+  transition: color 0.2s ease-in;
+  font-weight: 500;
+  &:hover {
+    color: $accent-green;
+  }
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@include mediaLargeTablet {
+  .container {
+   width: 90%;
+  }}
+h1 {
+  font-family: $font-accent;
+  font-weight: 400;
+  font-size: 70px;
+  letter-spacing: 0.03em;
+}
+h2 {
+  font-family: $font-accent; 
+  font-weight: 400;
+  font-size: 45px; 
+  letter-spacing: 0.04em;
+  text-align: center; 
+  line-height: 108%;
+
+}
+.accent-text {
+  font-family: $font-accent;
+}
+p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffffb9;
+}
+
+.btn {
+  padding: 16px 32px;
+  width: max-content;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-white {
+  padding: 16px 32px;
+  border-radius: 10px;
+  background-color: $white;
+  color: $dark;
+  stroke-width: 1px;
+  stroke: #1c1c1d;
+  box-shadow: 0 4px 0 0 $dark;
+  transition:  background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #fac6ffb9;
+  }
+}
+.flex{
+  display: flex;
+}
+input{
+  color: $dark;
+}

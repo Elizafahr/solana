@@ -1,0 +1,34 @@
+.rewiew {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding:  15px;
+  text-align: left !important;
+  justify-content: space-between;
+  .flex{
+    align-items: center;
+    gap: 10px;
+  }
+  .img {
+    display: flex;
+    height: 70px !important;
+    width: max-content;
+    min-width: 90px;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  .rewiew-title {
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: 0.03em;
+    color: #fff;
+  }
+  p{
+    font-size: 18px;
+    line-height: 100%;
+    margin-top: 10px;
+  }
+}

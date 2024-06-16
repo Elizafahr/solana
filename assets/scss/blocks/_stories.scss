@@ -1,0 +1,50 @@
+.Stories {
+  .container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .Stories-items {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 20px;
+      opacity: 0;
+      transform: translateX(100%);
+      transition: opacity 0.5s, transform 0.5s;
+      @include mediaTablet {
+        grid-template-columns: repeat(2, auto);
+  
+      }
+      @include mediaMobile {
+        grid-template-columns: repeat(1, auto);
+  
+      }
+      
+      .Stories-item {
+        h4 {
+          margin-top: 24px;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 133%;
+        }
+        p {
+          color: $dark;
+          font-size: 16px;
+          opacity: 0.9;
+        }
+        opacity: 0;
+        transform: translateX(100%);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+    }
+    .Stories-items.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .Stories-item.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+  }
+}

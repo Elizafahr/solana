@@ -1,0 +1,26 @@
+.footer {
+  background-color: $accent-purple;
+     color: $white;
+    height: 100%;
+    nav {
+      *, .logo{
+        width: max-content;
+      }
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 19px;
+      row-gap: 10px;
+      flex-wrap: wrap;
+      .menu{
+        display: flex;
+        column-gap:20px;
+    }
+    button{
+      margin-left: 10px;
+    }
+       
+     
+  }  
+}

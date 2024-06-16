@@ -1,0 +1,22 @@
+//base
+@import "./base/reset.scss";
+@import "./base/vars.scss";
+@import "./base/mixins.scss";
+@import "./base/base.scss";
+@import "./base/cards.scss";
+
+//blocks
+
+@import "./blocks/flip";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/rewiew";
+@import "./blocks/CTA";
+@import "./blocks/contact";
+@import "./blocks/footer";
+@import "./blocks/stories";
+@import "./blocks/cursor";
+@import "./blocks/about";
+@import "./blocks/plans";
+@import "./blocks/adv";
+@import "./blocks/nav-icon";

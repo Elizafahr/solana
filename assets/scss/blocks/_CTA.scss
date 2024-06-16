@@ -1,0 +1,94 @@
+.CTA { 
+   text-align: left !important;
+  background-color: $purple;
+  padding: 50px 0;
+  color: $white;
+
+  .container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: 100%;
+    gap: 5%;
+
+    @include mediaTablet {
+      grid-template-columns:   auto;
+    }
+    
+    .text-content {
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+
+      h2 {
+        text-align: left !important;
+      }
+
+      form {
+        input {
+          border-radius: 10px;
+          background-image: url("../img/Rectangle 1225.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          padding: 12px 10px ;
+        }
+        button {
+          background-image: url("../img/bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+          padding: 8px 20px ;
+          margin-left: 10px; 
+          
+        }
+        
+      }
+     
+    } .img{
+        max-height: 400px;
+        img{
+          height: 100%;
+        }
+        &:hover{
+          animation: onHover 2s   both;
+        }
+      }
+        .onActive{
+        animation: rotate-90-cw 2s backwards;
+      }
+    
+  }
+}
+
+@keyframes rotate-90-cw {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(-46deg);
+  }
+  100% { 
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes onHover {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(-6deg);
+            transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  
+}

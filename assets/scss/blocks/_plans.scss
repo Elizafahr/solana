@@ -1,0 +1,74 @@
+.plans {
+  padding: 50px 0;
+
+  p {
+    color: $dark;
+    text-align: center;
+  }
+
+  .plan-items {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+    @include mediaLargeTablet {
+      grid-template-columns: repeat(3, auto);
+
+    }
+    @include mediaTablet {
+      grid-template-columns: repeat(2, auto);
+
+    }
+    @include mediaMobile {
+      grid-template-columns: repeat(1, auto);
+
+    }
+    
+    .plan-item {
+      width: 100%;
+      padding: 30px 20px;
+      height: max-content;
+      h3 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 150%;
+        
+        @include mediaTablet {
+          line-height: 120%;
+
+    
+        }
+        
+      }
+      ul li,
+      button {
+        margin-top: 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  .btn-flex {
+    display: flex;
+    margin: 30px auto;
+    width: max-content;
+   
+    button {
+      width: 130px;
+      padding: 16px 0;
+      border: 2px solid $dark;
+      &:first-child{
+        border-radius: 25px 0 0 25px;
+        border-right: none;
+      }
+      &:last-child{
+        border-radius: 0 25px  25px 0;
+      }
+     
+    }
+    
+  }
+  .selected-btn {
+    background-color: rgb(232, 232, 232);
+    transition: background-color 0.3s ease;}
+  
+}

@@ -1,0 +1,81 @@
+.contact {
+  text-align: left !important;
+  padding: 50px 0;
+  color: $dark;
+  p {
+    color: $dark;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50% auto;
+    height: 100%;
+    gap: 5%;
+
+    @include mediaTablet {
+      grid-template-columns:  auto;
+
+    }
+   
+    .text-content {
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+
+      h2 {
+        text-align: left !important;
+      }
+      .btns {
+        gap: 15px;
+        button{
+          background-image: url("../img/bg.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          box-shadow: none;
+        }
+      }
+    }
+    form {
+      border-radius: 10px;
+      width: 100%;
+       
+
+      background-image: url("../img/Rectangle 1266.png");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding: 40px;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      input {
+        border-radius: 10px;
+        
+        padding: 12px 10px;
+        background-image: url("../img/Rectangle 1225.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      button {
+        background-image: url("../img/Bg (1).png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          box-shadow: none;
+      }
+      input[type="checkbox"] {
+        float: left;
+        box-shadow: none;
+        margin-right: 10px;
+      }
+      .btn {
+        width: 100%;
+        margin: 0;
+        background-image: url("../img/Bg (1).png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        box-shadow: none;
+      }
+    }
+  }
+}
