@@ -680,6 +680,11 @@ nav {
   flex-direction: column;
   gap: 15px;
 }
+@media screen and (max-width: 450px) {
+  .contact .container form {
+    width: 90%;
+  }
+}
 .contact .container form input {
   border-radius: 10px;
   padding: 12px 10px;
