@@ -8,9 +8,9 @@ body {
   font-size: 18px;
   cursor: none !important;
   height: 100vh;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100vw;
 
-  
 }
 a {
   color: $white;
@@ -25,25 +25,34 @@ a {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @include mediaLargeTablet {
+    width: 90%;
+  }
+  @include mediaMobile {
+    width: 90%;
+  }
 }
-@include mediaLargeTablet {
-  .container {
-   width: 90%;
-  }}
+
 h1 {
   font-family: $font-accent;
   font-weight: 400;
   font-size: 70px;
   letter-spacing: 0.03em;
+  @include mediaLargeTablet {
+    font-size: 50px;
+  }
 }
 h2 {
-  font-family: $font-accent; 
+  font-family: $font-accent;
   font-weight: 400;
-  font-size: 45px; 
+  font-size: 45px;
   letter-spacing: 0.04em;
-  text-align: center; 
+  text-align: center;
   line-height: 108%;
-
+  @include mediaLargeTablet {
+    font-size: 35px;
+  }
 }
 .accent-text {
   font-family: $font-accent;
@@ -55,6 +64,9 @@ p {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #ffffffb9;
+  @include mediaLargeTablet {
+    font-size: 16px;
+  }
 }
 
 .btn {
@@ -73,15 +85,15 @@ p {
   stroke-width: 1px;
   stroke: #1c1c1d;
   box-shadow: 0 4px 0 0 $dark;
-  transition:  background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 
   &:hover {
     background-color: #fac6ffb9;
   }
 }
-.flex{
+.flex {
   display: flex;
 }
-input{
+input {
   color: $dark;
 }

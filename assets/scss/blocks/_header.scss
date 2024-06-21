@@ -1,7 +1,7 @@
 .header {
   background-color: $accent-purple;
   height: 802px;
-  padding:  0 0 50px 0;
+  padding: 0 0 50px 0;
   @include mediaLargeTablet {
     min-height: 500px;
     height: max-content;
@@ -10,9 +10,6 @@
     color: $white;
     height: 100%;
     nav {
-      // position:fixed;
-      // width: 100%;
-      // max-width: 100vw;
       z-index: 2;
       top: 0px;
       background-color: $accent-purple;
@@ -38,14 +35,14 @@
 
     .header-content {
       height: 70%;
-       display: grid;
+      display: grid;
       grid-template-columns: 50% 50%;
       position: relative;
       @include mediaLargeTablet {
         grid-template-columns: 70% 30%;
       }
       @include mediaMobile {
-        grid-template-columns:auto;
+        grid-template-columns: auto;
       }
       .text-content {
         height: 100%;
@@ -61,20 +58,19 @@
         }
       }
       .img-container {
-  
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-         @include mediaLargeTablet {
+        @include mediaLargeTablet {
           height: 100%;
-          bottom:  0px;
-         }
+          bottom: 0px;
+        }
         @include mediaTablet {
           display: none;
         }
       }
-      
+
       .paralax-img {
         position: absolute;
         width: auto;
@@ -83,38 +79,21 @@
         transform: translateX(-50%);
         transition: all 1s ease-in-out;
       }
-      
+
       .paralax-img.show {
         opacity: 1;
         transform: translateX(0);
       }
-      // .img {
-      //   right: -10vw;
-      //   position: absolute;
-      //   height: 120%;
-      //   z-index: 0;
-      //   @include mediaLargeTablet {
-      //     height: 100%;
-      //     bottom: -130px;
-      //   }
-      //   @include mediaTablet {
-      //     display: none;
-      //   }
-      //   img {
-      //     height: 100%;
-      //   }
-      // }
+
       .btns {
         gap: 20px;
         margin-top: 50px;
+        @include mediaMobile {
+          flex-direction: column;
+        }
       }
     }
   }
-
-  // background-image: url("../img/Illustration.png");
-  // background-repeat: no-repeat;
-  // background-position: right 100%;
-  // background-size: auto 85%;
 
   .nav__list-mobile {
     display: none;
@@ -138,7 +117,7 @@
     width: 100vw;
     height: 100vh;
     background-color: $dark;
-
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -150,7 +129,6 @@
 
     .nav__list-mobile {
       display: flex;
-
       flex-direction: column;
       align-items: center;
       row-gap: 30px;
@@ -158,8 +136,8 @@
 
     .header__nav-btn {
       position: fixed;
-      top: 50px;
-      right: 25px;
+      top: 30px;
+      left: 85vw;
     }
   }
 }
@@ -174,12 +152,12 @@
     transform: rotate(90deg);
   }
 }
- 
-.socialMedia{
-  li{
-    a{
-      &:hover{
-        img{
+
+.socialMedia {
+  li {
+    a {
+      &:hover {
+        img {
           scale: 1.1;
         }
       }

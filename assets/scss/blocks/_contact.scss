@@ -22,12 +22,16 @@
       flex-direction: column;
       justify-content: center;
       gap: 15px;
+      width: 100%;
 
       h2 {
         text-align: left !important;
       }
       .btns {
         gap: 15px;
+        @include mediaMobile {
+          flex-direction: column;
+        }
         button{
           background-image: url("../img/bg.png");
           background-repeat: no-repeat;
