@@ -117,7 +117,7 @@ a:hover {
     width: 90%;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .container {
     width: 90%;
   }
@@ -384,7 +384,7 @@ input {
     grid-template-columns: 70% 30%;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .header .container .header-content {
     grid-template-columns: auto;
   }
@@ -435,7 +435,7 @@ input {
   gap: 20px;
   margin-top: 50px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .header .container .header-content .btns {
     flex-direction: column;
   }
@@ -582,7 +582,7 @@ nav {
   padding: 8px 20px;
   margin-left: 10px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .CTA .container .text-content form .flex {
     flex-direction: column;
   }
@@ -656,13 +656,13 @@ nav {
 .contact .container .text-content .btns {
   gap: 15px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .contact .container .text-content .btns {
     flex-direction: column;
   }
 }
 .contact .container .text-content .btns button {
-  background-image: url("../img/bg.png");
+  background-image: url("../img/Bg.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   box-shadow: none;
@@ -688,7 +688,7 @@ nav {
   background-size: 100% 100%;
 }
 .contact .container form button {
-  background-image: url("../img/Bg (1).png");
+  background-image: url("../img/Bg1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   box-shadow: none;
@@ -701,7 +701,7 @@ nav {
 .contact .container form .btn {
   width: 100%;
   margin: 0;
-  background-image: url("../img/Bg (1).png");
+  background-image: url("../img/Bg1.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   box-shadow: none;
@@ -734,7 +734,7 @@ nav {
 .footer nav button {
   margin-left: 10px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .footer .btns {
     flex-direction: column;
     gap: 10px;
@@ -760,7 +760,7 @@ nav {
     grid-template-columns: repeat(2, auto);
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .Stories .container .Stories-items {
     grid-template-columns: repeat(1, auto);
   }
@@ -830,6 +830,11 @@ nav {
   min-height: 183px;
   min-width: 340px;
 }
+@media screen and (max-width: 450px) {
+  .about swiper-slide {
+    width: 90vw !important;
+  }
+}
 .about swiper-slide img {
   display: block;
   width: 100%;
@@ -871,7 +876,7 @@ nav {
     grid-template-columns: repeat(2, auto);
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
   .plans .plan-items {
     grid-template-columns: repeat(1, auto);
   }

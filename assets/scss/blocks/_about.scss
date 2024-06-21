@@ -25,7 +25,9 @@
     align-items: center;
     min-height: 183px;
     min-width: 340px;
-    
+    @include mediaMobile {
+      width: 90vw !important;
+    }
     
   }
 
